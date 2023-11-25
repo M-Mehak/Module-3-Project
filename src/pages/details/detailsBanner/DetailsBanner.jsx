@@ -8,7 +8,7 @@ import useFetch from "../../../hooks/useFetch";
 import Genres from "../../../components/genres/Genres";
 import Img from "../../../components/lazyLoadImage/Img.jsx";
 import PosterFallback from "../../../assets/no-poster.png";
-import { PlayIcon } from "../Playbtn";
+import { PlayIcon } from "../PlayBtn";
 import VideoPopup from "../../../components/videoPopup/VideoPopup";
 
 import "./styles.scss";
