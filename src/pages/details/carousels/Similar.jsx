@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import Carousel from "../../../components/carousel/Carousel";
 import useFetch from "../../../hooks/useFetch";
 
 const Similar = ({ mediaType, id }) => {
-    const { data, loading, error } = useFetch(`/${mediaType}/${id}/similar`);
+    const { data, loading} = useFetch(`/${mediaType}/${id}/similar`);
 
     const title = mediaType === "tv" ? "Similar TV Shows" : "Similar Movies";
 
@@ -14,6 +15,11 @@ const Similar = ({ mediaType, id }) => {
             endpoint={mediaType}
         />
     );
+};
+
+Similar.propTypes = {
+    mediaType: PropTypes.oneOf(['tv', 'movie']).isRequired,
+    id: PropTypes.number.isRequired,
 };
 
 export default Similar;
