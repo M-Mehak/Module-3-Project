@@ -5,7 +5,7 @@ import "./style.scss";
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import VideoPopup from "../../../components/videoPopup/VideoPopup";
 import Img from "../../../components/lazyLoadImage/Img";
-import { PlayIcon } from "../Playbtn";
+import { PlayIcon } from "../PlayBtn";
 
 const VideoItem = ({ video, onVideoClick }) => (
   <div className="videoItem" onClick={() => onVideoClick(video.key)}>
